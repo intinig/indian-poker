@@ -1,5 +1,5 @@
-require './deck'
-require './player'
+require File.dirname(__FILE__) + '/deck'
+require File.dirname(__FILE__) + '/player'
 
 module Server
   class Base

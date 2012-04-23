@@ -4,15 +4,15 @@ module Server
 
     def initialize(name)
       @name = name
-      @chips = "1000"
+      @chips = 1000
       @card = nil
       @button = false
     end
 
     def get_chips(amount)
       if chips > amount
-        transfer = chips
-        chips -= chips
+        transfer = @chips
+        @chips -= @chips
         transfer
       else
         chips -= amount
